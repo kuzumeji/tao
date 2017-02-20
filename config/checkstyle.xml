@@ -62,7 +62,10 @@
     <module name="ExecutableStatementCount">
       <property name="tokens" value="INSTANCE_INIT,STATIC_INIT,METHOD_DEF,CTOR_DEF"/>
     </module>
-    <module name="LineLength"/>
+    <module name="LineLength">
+      <property name="max" value="120"/>
+      <property name="tabWidth" value="4"/>
+    </module>
     <module name="MethodLength"/>
     <module name="ParameterNumber"/>
     <module name="OuterTypeNumber"/>
@@ -168,7 +171,9 @@
     <module name="AvoidEscapedUnicodeCharacters"/>
   </module>
   <module name="JavadocPackage"/>
-  <module name="Header"/>
+  <module name="Header">
+    <property name="header" value="/**\n * Copyright (C) Kuzumeji Studios. All rights reserved.\n * Licensed under the GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (the 'License').\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at https://www.gnu.org/licenses/agpl-3.0.txt\n */\n"/>
+  </module>
   <module name="FileLength"/>
   <module name="FileTabCharacter"/>
   <module name="NewlineAtEndOfFile"/>
